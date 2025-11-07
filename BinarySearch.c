@@ -12,7 +12,7 @@ int rbinsearch(int arr[], int l, int h, int key) {
         return rbinsearch(arr, l, mid - 1, key);
     } 
     else {
-        return rbinsearch(arr, mid + 1, h, key);
+        return rbinsearch (arr, mid + 1, h, key);
     }
 }
 
@@ -20,7 +20,7 @@ int main() {
     int arr[] = {2, 4, 6, 8, 10, 12, 14};
     int n = sizeof(arr) / sizeof(arr[0]);
     int key = 2;
-    int result = rbinsearch(arr, 0, n - 1, key);
+    int result = rbinsearch (arr, 0, n - 1, key);
 
     if (result == -1) {
         printf("Key %d not found in the array\n", key);
